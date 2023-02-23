@@ -1,0 +1,8 @@
+import re 
+celular = str(input("Digite o seu telefone fixo ou celular para ser validado"))
+padrao = r'^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$' 
+expressao_regular = re.compile(padrao)
+if re.fullmatch(expressao_regular, celular):    
+  print("O seu numero de telefone é valido") 
+else: 
+  print("O seu numero de telefone é falso")
