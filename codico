@@ -1,0 +1,6 @@
+import re  
+email = str(input("Digite o seu email: "))
+if re.fullmatch(expressao_regular, email):  
+ print("Seu email é valido")
+else:     
+ print("eMAIL INVÁLIDO")
